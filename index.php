@@ -3,7 +3,13 @@ es. [a,b,c,d,e], [1,2,3,4,5] → [a,1,b,2,c,3,d,4,e,5]. -->
 
 <?php
     $letters = ['a','b','c','d','e'];
-    $numbers = ['1','2','3','4','5'];
+    $numbers = [1,2,3,4,5];
+    var_dump($letters, $numbers);
+    $mixed=[];
+    for($i=0; $i<count($letters); $i++){
+        array_push($mixed, $letters[$i], $numbers[$i]);
+    }
+    var_dump($mixed);
 ?>
 
 <!DOCTYPE html>
